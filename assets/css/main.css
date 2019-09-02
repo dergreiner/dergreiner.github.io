@@ -150,6 +150,7 @@ input, select, textarea {
 
 		html, body {
 			min-width: 320px;
+			
 		}
 
 	}
@@ -206,7 +207,13 @@ input, select, textarea {
 			}
 
 		}
+		@media screen and (max-width: 480px) {
 
+			body, input, select, textarea {
+				font-size: 16pt;
+			}
+
+		}
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -1549,7 +1556,7 @@ input, select, textarea {
 			transform: translateY(0);
 			bottom: auto;
 			height: 4em;
-			padding: 0 1em;
+			padding: 0 0.5em;
 			top: 0;
 		}
 
@@ -2006,7 +2013,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) { /*HANDY größen verändern*/
 
 			#main {
 				padding-top: 4em;
@@ -2049,12 +2056,12 @@ input, select, textarea {
 			}
 
 				#header h1 {
-					font-size: 1em;
+					font-size: 1.5em;  
 				}
 
 				#header nav > ul > li a {
-					font-size: 1em;
-					padding: 0 1.15em;
+					font-size: 0.85em;
+					padding: 0 0.15em;
 				} 
 
 		}
