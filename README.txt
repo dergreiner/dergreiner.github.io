@@ -1,6 +1,6 @@
 Design:
 	Kai Anter
-	kai-anter.tk
+	anter.dev
 
 Template:
 	Multiverse by HTML5 UP
