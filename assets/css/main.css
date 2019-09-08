@@ -1950,8 +1950,8 @@ input, select, textarea {
 				-webkit-transition-delay: 2.075s;
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
-				height: calc(28.57143vh - 1.33333em);
-				min-height: 18em;
+				height: calc(calc(50vw / 16) * 9);
+				min-height: 0;
 				width: 50%;
 			}
 
@@ -2032,9 +2032,9 @@ input, select, textarea {
 				-webkit-transition-delay: 1.175s;
 				-ms-transition-delay: 1.175s;
 				transition-delay: 1.175s;
-				height: calc(40vh - 2em);
-				min-height: 18em;
 				width: 100%;
+				height: calc(calc(100vw / 16) * 9);
+				min-height: 0;
 			}
 
 				#main .thumb:nth-child(1) {
