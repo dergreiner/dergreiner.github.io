@@ -2043,6 +2043,7 @@ input, select, textarea {
 			#main {
 				padding-top: 4em;
 				padding-bottom: 3em;
+				font-size: 0.7em; /*schriftgröße schrift*/
 			}
 
 			#main .thumb {
@@ -2110,6 +2111,7 @@ input, select, textarea {
 		width: 100%;
 		z-index: 10002;
 		opacity: 0.85;
+		font-size: 0.85em;
 	}
 
 	#mfooter a {
@@ -2118,7 +2120,7 @@ input, select, textarea {
 		text-decoration: none;
 		display: inline-block;
 		border: 0;
-		margin: 0 0.4em;
+		margin: 0 0.1em;
 	}
 
 	#mfooter a:hover {
@@ -2293,6 +2295,7 @@ input, select, textarea {
 			.box.style1 .inner > :last-child {
 				margin: 0;
 			}
+		
 
 			.box.style1.right .image {
 				left: 0;
@@ -2533,6 +2536,7 @@ input, select, textarea {
 #imprintdiv {
 	display: block;
 	padding: 5em 3em;
+	
 }
 
 #imprintdiv > p, #imprintdiv > h1, #imprintdiv > h2 {
