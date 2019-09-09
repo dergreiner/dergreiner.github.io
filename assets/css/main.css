@@ -2032,7 +2032,7 @@ input, select, textarea {
 
 			.photo .thumb {
 				height: calc(40vh - 2em) !important;
-				min-height: 18em !important;
+				min-height: 25em !important;
 			}
 			
 			.video .thumb {
