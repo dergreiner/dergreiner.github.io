@@ -1242,7 +1242,7 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			background-size: 3em;
 			height: 5em;
-			opacity: 0;
+			opacity: 0.5;
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -1263,7 +1263,7 @@ input, select, textarea {
 			cursor: pointer;
 			height: 8em;
 			margin-top: -4em;
-			opacity: 0;
+			opacity: 0.5;
 			position: absolute;
 			top: 50%;
 			width: 6em;
@@ -1945,13 +1945,21 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			.photo .thumb {
+				height: calc(28.57143vh - 1.33333em) !important;
+				min-height: 18em !important;
+			}
+
+			.video .thumb {
+				height: calc(calc(50vw / 16) * 9) !important;
+				min-height: 0 !important;
+			}
+			
 			#main .thumb {
 				-moz-transition-delay: 2.075s;
 				-webkit-transition-delay: 2.075s;
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
-				height: calc(calc(50vw / 16) * 9);
-				min-height: 0;
 				width: 50%;
 			}
 
@@ -2022,6 +2030,16 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) { /*HANDY größen verändern*/
 
+			.photo .thumb {
+				height: calc(40vh - 2em) !important;
+				min-height: 18em !important;
+			}
+			
+			.video .thumb {
+				height: calc(calc(100vw / 16) * 9) !important;
+				min-height: 0 !important;
+			}
+			
 			#main {
 				padding-top: 4em;
 				padding-bottom: 3em;
@@ -2033,8 +2051,6 @@ input, select, textarea {
 				-ms-transition-delay: 1.175s;
 				transition-delay: 1.175s;
 				width: 100%;
-				height: calc(calc(100vw / 16) * 9);
-				min-height: 0;
 			}
 
 				#main .thumb:nth-child(1) {
