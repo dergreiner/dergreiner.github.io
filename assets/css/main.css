@@ -818,13 +818,14 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: dinsc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			
 		}
 
 		ul.alt {
@@ -841,6 +842,7 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
+				u
 
 	dl {
 		margin: 0 0 2em 0;
@@ -1524,7 +1526,10 @@ input, select, textarea {
 				#header nav > ul > li {
 					display: inline-block;
 					padding: 0;
+					position: relative;
 				}
+
+				
 
 					#header nav > ul > li a {
 						-moz-transition: background-color 0.5s ease;
@@ -1538,6 +1543,8 @@ input, select, textarea {
 						letter-spacing: 0.01em;
 						padding: 0 0.5em; /* Abstand zwischen Überschriften*/
 						text-transform: uppercase;
+						
+						
 					}
 
 						#header nav > ul > li a.icon:before {
@@ -1550,9 +1557,50 @@ input, select, textarea {
 							color: #ffffff !important;
 						}
 
+						#header nav > ul > li a:hover > ul > li {
+							display: inline-block;
+						}
+
 						#header nav > ul > li a.active {
 							background-color: #242629;
 						}
+						
+						#header nav > ul >li > ul { /* dropdownmenü */
+							
+							display: none;
+							position: absolute;
+							background-color: #000000;
+							padding: 5px;
+							border-radius: 0px 0px 7px 7px;
+						}
+
+						#header nav > ul >li:hover ul { /* dropdownmenü */
+							
+							display: block;
+							
+						}
+
+						#header nav > ul >li > ul > li {
+								width: 80px;
+								border-radius: 2px;
+
+						}
+						#header nav > ul >li > ul > li a { /* dropdownmenü */
+							float: left;
+							color: #fffb00; /* textfarbe*/
+							display: block;
+							font-size: 1.5em;/* Schriftgröße*/
+							letter-spacing: 0.01em;
+							padding: 0 0.5em; /* Abstand zwischen Überschriften*/
+							text-transform: uppercase;
+							
+						} 
+						#header nav > ul >li > ul > li a:hover {
+								/*background-color: yellow;*/
+								color: #ffffff !important;
+
+						}
+						
 
 	@media screen and (max-width: 736px) {
 
@@ -2076,7 +2124,7 @@ input, select, textarea {
 				}
 
 			#header {
-				line-height: 4em;
+				line-height: 3.98em;
 			}
 
 				#header h1 {
@@ -2086,6 +2134,12 @@ input, select, textarea {
 				#header nav > ul > li a {
 					font-size: 0.85em;
 					padding: 0 0.15em;
+				} 
+				#header nav > ul > li > ul > li a {
+					font-size: 0.85em;
+					line-height: 2em;
+					padding: 0 0.01em; /* Abstand zwischen Überschriften*/
+					border-radius: 0px 6px 0px 0px;
 				} 
 
 		}
