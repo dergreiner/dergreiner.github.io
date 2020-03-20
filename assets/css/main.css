@@ -1570,7 +1570,7 @@ input, select, textarea {
 							display: none;
 							position: absolute;
 							background-color: #000000;
-							padding: 5px;
+							padding: 0.5em;
 							border-radius: 0px 0px 7px 7px;
 						}
 
@@ -1581,7 +1581,7 @@ input, select, textarea {
 						}
 
 						#header nav > ul >li > ul > li {
-								width: 80px;
+								width: 10em;
 								border-radius: 2px;
 
 						}
@@ -2135,12 +2135,31 @@ input, select, textarea {
 					font-size: 0.85em;
 					padding: 0 0.15em;
 				} 
-				#header nav > ul > li > ul > li a {
-					font-size: 0.85em;
-					line-height: 2em;
-					padding: 0 0.01em; /* Abstand zwischen Überschriften*/
-					border-radius: 0px 6px 0px 0px;
+				
+				#header nav > ul >li > ul { /* dropdownmenü */
+							
+
+					padding: 0.03em;
+					border-radius: 0px 0px 3px 3px; /* Runde kanten*/
+				}
+
+				#header nav > ul >li > ul > li a { /* dropdownmenü */
+					float: left;
+					color: #fffb00; /* textfarbe*/
+					
+					font-size: 0.85em;/* Schriftgröße*/
+					
+					line-height:2em;
+					padding: 0 0.5em; /* Abstand zwischen Überschriften*/
+					
+					
 				} 
+				
+				#header nav > ul >li > ul > li {
+					width: 7em;
+					border-radius: 1px;
+
+			}
 
 		}
 
